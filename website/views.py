@@ -4,6 +4,16 @@ from django.core.mail import send_mail
 # Create your views here.
 def home(request) :
   return render(request,'home.html',{})
+def about(request) :
+  return render(request,'about.html',{})
+def service(request) :
+  return render(request,'service.html',{})
+def price(request) :
+  return render(request,'pricing.html',{})
+def blog(request) :
+  return render(request,'blog.html',{})
+def blog_details(request) :
+  return render(request,"blog-details.html",{})
 
 def contact(request) :
   if request.method == "POST":
